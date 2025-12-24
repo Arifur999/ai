@@ -1,21 +1,29 @@
-import "./globals.css"
-import { ReactNode } from "react"
+import LiquidBackground from "../components/background/LiquidBackground";
+import Navbar from "../components/ui/Navbar";
+import "./globals.css";
 
-export const metadata = {
-  title: "ARAI",
-  description: "Multi AI Platform",
-}
+
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        {children}
+    <html lang="en" data-theme="dark">
+      <body className="relative min-h-screen">
+        {/* Background */}
+        <LiquidBackground />
+
+        {/* Foreground UI */}
+        <Navbar />
+
+        <main className="relative z-10 p-4">
+          {children}
+        </main>
+
+        
       </body>
     </html>
-  )
+  );
 }

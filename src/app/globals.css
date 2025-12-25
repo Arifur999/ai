@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.perspective {
+  perspective: 1200px;
+}

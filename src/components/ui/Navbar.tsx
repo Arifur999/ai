@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { 
   SiOpenai, 
   SiGoogle, 
-  SiX, 
+//   SiX, 
   SiAnthropic 
 } from "react-icons/si";
 import { RiRobot2Fill } from "react-icons/ri";
@@ -15,7 +15,7 @@ import { RiRobot2Fill } from "react-icons/ri";
 const navItems = [
   { name: "ChatGPT", href: "/chatgpt", icon: <SiOpenai /> },
   { name: "Gemini", href: "/gemini", icon: <SiGoogle /> },
-  { name: "Grok", href: "/grok", icon: <SiX /> },
+//   { name: "Grok", href: "/grok", icon: <SiX /> },
   { name: "Claude", href: "/claude", icon: <SiAnthropic /> },
   { name: "Perplexity", href: "/replicate", icon: <RiRobot2Fill /> },
   { name: "DeepSeek", href: "/replicate", icon: <RiRobot2Fill /> },

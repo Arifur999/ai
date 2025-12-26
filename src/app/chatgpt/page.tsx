@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { ChatMessage } from "@/types/chat";
-import ChatTabs from "@/src/components/chat/ChatTabs";
 import ChatBox from "@/src/components/chat/ChatBox";
 import ChatInput from "@/src/components/chat/ChatInput";
 
@@ -38,12 +37,11 @@ export default function ChatGPTPage() {
   }
 
   return (
-    <div className="h-[calc(100vh-80px)] max-w-4xl mx-auto
+    <div className="h-[calc(100vh-80px)] max-w-6xl mx-auto
                     bg-[#0B0F19]/70 backdrop-blur
                     border border-white/10 rounded-2xl
                     flex flex-col overflow-hidden">
 
-      <ChatTabs />
       <ChatBox messages={messages} />
       <ChatInput onSend={sendMessage} />
     </div>
